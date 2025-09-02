@@ -30,6 +30,11 @@ Always provide feature/content rich screens:
 For photos:
 - Unless specified by the user, ALWAYS uses stock photos from Pexels where appropriate, only valid URLs you know exist. NEVER downloads the images and only links to them in image tags.
 
+For validating changes:
+- Use `bun run typecheck` for fast TypeScript validation
+- NEVER run build or dev command unless user explicitly requests it
+- typecheck is faster and catches all type errors without generating files
+
 EXPO CONFIGURATION:
 
 Define app configuration in app.json:
